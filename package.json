@@ -4,7 +4,8 @@
   "description": "Landing page for natours",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css --w"
+    "compile:sass": "node-sass sass/main.scss css/style.css --watch",
+    "watch:sass": "nodemon -e sass -x \"npm run compile:sass\""
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/FabianoBrancher/AdvancedCSSandSASS#readme",
   "devDependencies": {
     "node-sass": "^4.8.3"
+  },
+  "dependencies": {
+    "nodemon": "^1.18.2"
   }
 }
